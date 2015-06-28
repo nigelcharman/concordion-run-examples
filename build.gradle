@@ -15,14 +15,14 @@ wrapper {
 
 dependencies {
     testCompile 'org.concordion:concordion:1.5.1-SNAPSHOT'
-    testCompile 'org.concordion:concordion-parallel-run-extension:1.0.0'
-    testRuntime 'org.slf4j:slf4j-simple:1.7.12'
+//    testCompile 'org.concordion:concordion-parallel-run-extension:1.0.0'
+//    testRuntime 'org.slf4j:slf4j-simple:1.7.12'
 }
 
 test {
     include '**/TestSuite.*'
-    systemProperties['concordion.extensions'] = "org.concordion.ext.ParallelRunExtension"
-    systemProperties['concordion.run.threadCount'] = "2.5C"     
+//    systemProperties['concordion.extensions'] = "org.concordion.ext.ParallelRunExtension"
+//    systemProperties['concordion.run.threadCount'] = "2.5C"     
     systemProperties['concordion.output.dir'] = "$reporting.baseDir/spec"
 }
 
